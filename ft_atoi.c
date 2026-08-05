@@ -1,20 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_toupper.c                                       :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kaaltint@student.42istanbul.com.tr         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/05 12:04:46 by kaaltint          #+#    #+#             */
-/*   Updated: 2026/08/05 12:04:47 by kaaltint         ###   ########.fr       */
+/*   Created: 2026/08/05 12:04:01 by kaaltint          #+#    #+#             */
+/*   Updated: 2026/08/05 12:04:02 by kaaltint         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_toupper(int c)
+int	ft_atoi(const char *nptr)
 {
-    if (c >= 'a' && c <= 'z')
-        return (c - 32);
-    return (c);
+	int		sign;
+	long	result;
+
+	while ((*nptr >= 9 && *nptr <= 13) || *nptr == ' ')
+		nptr++;
+	sign = 1;
+	if (*nptr == '+' || *nptr == '-')
+	{
+		if (*nptr == '-')
+			sign = -1;
+		nptr++;
+	}
+	result = 0;
+	while (*nptr >= '0' && *nptr <= '9')
+	{
+		result = result * 10 + (*nptr - '0');
+		nptr++;
+	}
+	return ((int)(result * sign));
 }

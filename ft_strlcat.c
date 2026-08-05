@@ -1,21 +1,35 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: kaaltint@student.42istanbul.com.tr         +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/08/05 12:04:29 by kaaltint          #+#    #+#             */
+/*   Updated: 2026/08/05 12:04:30 by kaaltint         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
-size_t ft_strlcat(char *dst, const char *src, size_t size)
+size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
-    size_t  i;
-    size_t  j;
+	size_t	dst_len;
+	size_t	src_len;
+	size_t	i;
 
-    i = ft_strlen(src);
-    j = ft_strlen(dst);
-
-    if (j == size)
-        return (size + i);
-    if (size >= i + j)
-        ft_memcpy(dst + j, src, i + 1);
-    else
-    {
-        ft_memcpy(dst + j, src, size - j - 1);
-        dst[size - 1] = '\0';
-    }
-    return (j + i);
+	dst_len = 0;
+	while (dst_len < size && dst[dst_len] != '\0')
+		dst_len++;
+	src_len = ft_strlen(src);
+	if (dst_len == size)
+		return (size + src_len);
+	i = 0;
+	while (src[i] != '\0' && dst_len + i < size - 1)
+	{
+		dst[dst_len + i] = src[i];
+		i++;
+	}
+	dst[dst_len + i] = '\0';
+	return (dst_len + src_len);
 }
