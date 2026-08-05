@@ -17,11 +17,3 @@ void *ft_memcpy(void *dest, const void *src, size_t n)
     }
     return (dest);
 }
-int	main(void)
-{
-	char src[] = "42";
-	char dest[5];
-
-	ft_memcpy(dest, src, 4);
-	printf("%s\n", dest);
-}
