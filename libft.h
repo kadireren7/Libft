@@ -6,7 +6,7 @@
 /*   By: kaaltint@student.42istanbul.com.tr         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/05 12:29:05 by kaaltint          #+#    #+#             */
-/*   Updated: 2026/08/05 12:29:06 by kaaltint         ###   ########.fr       */
+/*   Updated: 2026/08/05 12:37:49 by kaaltint         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 # define LIBFT_H
 
 #include <unistd.h>
-#include <stdio.h>
 #include <stdlib.h>
 
 int ft_isalpha(int c);
@@ -34,9 +33,7 @@ int ft_tolower(int c);
 char *ft_strchr(const char *s, int c);
 char *ft_strrchr(const char *s, int c);
 int ft_strcmp(const char *s1, const char *s2);
-int ft_strncmp(const char *s1, const char *s2, size_t n);
 void *ft_memchr(const void *s, int c, size_t n);
-void *ft_memrchr(const void *s, int c, size_t n);
 int ft_memcmp(const void *s1, const void *s2, size_t n);
 char *ft_strnstr(const char *big, const char *little, size_t len);
 int ft_atoi(const char *nptr);
