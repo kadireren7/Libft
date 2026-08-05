@@ -1,29 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memrchr.c                                       :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kaaltint@student.42istanbul.com.tr         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/05 12:04:22 by kaaltint          #+#    #+#             */
-/*   Updated: 2026/08/05 12:09:31 by kaaltint         ###   ########.fr       */
+/*   Created: 2026/08/05 12:20:24 by kaaltint          #+#    #+#             */
+/*   Updated: 2026/08/05 12:20:25 by kaaltint         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memchr(const void *s, int c, size_t n)
+char	*ft_strdup(const char *s)
 {
-	const unsigned char	*str;
-	size_t				i;
+	char	*copy;
+	size_t	len;
+	size_t	i;
 
-	str = (const unsigned char *)s;
+	len = ft_strlen(s);
+	copy = malloc(len + 1);
+	if (copy == NULL)
+		return (NULL);
 	i = 0;
-	while (i < n)
+	while (i < len)
 	{
-		if (str[i] == (unsigned char)c)
-			return ((void *)&str[i]);
+		copy[i] = s[i];
 		i++;
 	}
-	return (NULL);
+	copy[i] = '\0';
+	return (copy);
 }
