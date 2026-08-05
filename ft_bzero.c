@@ -6,13 +6,13 @@
 /*   By: kaaltint@student.42istanbul.com.tr         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/05 12:04:03 by kaaltint          #+#    #+#             */
-/*   Updated: 2026/08/05 12:04:04 by kaaltint         ###   ########.fr       */
+/*   Updated: 2026/08/05 13:32:29 by kaaltint         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_bzero(void *s, size_t n)
+void	ft_bzero(void *s, size_t n)
 {
-    ft_memset(s, 0, n);
+	ft_memset(s, 0, n);
 }
