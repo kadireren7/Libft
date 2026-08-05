@@ -6,7 +6,7 @@
 /*   By: kaaltint@student.42istanbul.com.tr         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/05 12:29:05 by kaaltint          #+#    #+#             */
-/*   Updated: 2026/08/05 12:43:55 by kaaltint         ###   ########.fr       */
+/*   Updated: 2026/08/05 14:39:10 by kaaltint         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,5 +38,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len);
 int		ft_atoi(const char *nptr);
 void	*ft_calloc(size_t nmemb, size_t size);
 char	*ft_strdup(const char *s);
+void	ft_putchar_fd(char c, int fd);
+void    ft_putstr_fd(char *s, int fd);
 
 #endif
