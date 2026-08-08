@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
+/*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kaaltint@student.42istanbul.com.tr         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/05 14:36:20 by kaaltint          #+#    #+#             */
-/*   Updated: 2026/08/07 13:45:03 by kaaltint         ###   ########.fr       */
+/*   Created: 2026/08/07 17:50:30 by kaaltint          #+#    #+#             */
+/*   Updated: 2026/08/07 17:50:53 by kaaltint         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putchar_fd(char c, int fd)
+char    **ft_split(char const *s, char c)
 {
-    write (fd, &c, 1);
+    
 }

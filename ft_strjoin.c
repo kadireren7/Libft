@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
+/*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kaaltint@student.42istanbul.com.tr         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/05 14:36:20 by kaaltint          #+#    #+#             */
-/*   Updated: 2026/08/07 13:45:03 by kaaltint         ###   ########.fr       */
+/*   Created: 2026/08/07 17:51:19 by kaaltint          #+#    #+#             */
+/*   Updated: 2026/08/07 17:51:23 by kaaltint         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putchar_fd(char c, int fd)
+char    *ft_strjoin(char const *s1, char const *s2)
 {
-    write (fd, &c, 1);
+    
 }

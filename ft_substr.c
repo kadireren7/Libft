@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kaaltint@student.42istanbul.com.tr         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/05 14:36:20 by kaaltint          #+#    #+#             */
-/*   Updated: 2026/08/07 13:45:03 by kaaltint         ###   ########.fr       */
+/*   Created: 2026/08/07 13:45:39 by kaaltint          #+#    #+#             */
+/*   Updated: 2026/08/07 17:49:59 by kaaltint         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putchar_fd(char c, int fd)
+char    *ft_substr(char const *s, unsigned int start, size_t len)
 {
-    write (fd, &c, 1);
+    
 }
